@@ -98,14 +98,14 @@ class ExcelToXml:
                 if str(row[0]) != "name" and str(row[1]) != "Chinese" and str(row[2]) != "English":
                     item = ET.SubElement(root, "string", name=str(key).replace(" ", "_").replace("-", "_"))
                     if is_chinese == 2:
-                        text = str(value).replace("Aipay", "AIPay").replace("aib", "AIB").capitalize()
+                        text = str(value).replace("Ai", "AI").replace("ai", "AI").capitalize()
                         if "\\'" in text:
                             pass
                         else:
                             text = text.replace("'", "\\'")
                         item.text = text
                     else:
-                        item.text = str(value).replace("Aipay", "AIPay").replace("aib", "AIB").capitalize()
+                        item.text = str(value).replace("Ai", "AI").replace("ai", "AI").capitalize()
 
     def excel_to_xml(self, excel_path: str, sheet_name_list: list, is_chinese: int = 1):
         """

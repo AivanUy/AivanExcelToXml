@@ -20,18 +20,16 @@ def sheet_to_xml(ws, root, isChinese=1):
                 # print(f" {key} , {value}")
                 item = ET.SubElement(root, "string", name=str(key).replace(" ", "_").replace("-", "_"))
                 if isChinese == 2:
-                    # item.text = str(value).replace("AIB", "&money;").replace("AIPay", "&appname;").replace("'", "\\'")
-                    text = str(value).replace("Aipay", "AIPay").replace("aib", "AIB").capitalize()
+                    text = str(value).replace("Ai", "AI").replace("ai", "AI").capitalize()
                     if "\\'" in text:
-                        # text = text.replace("Aipay", "AIPay").replace("aib", "AIB").capitalize()
+                        # text = text.replace("Ai", "AI").replace("ai", "AI").capitalize()
                         pass
                     else:
                         text = text.replace("'", "\\'")
                     item.text = text
                 else:
                     # 首字母 转 大写
-                    # item.text = str(value).replace("AIB", "&money;").replace("AIPay", "&appname;")
-                    item.text = str(value).replace("Aipay", "AIPay").replace("aib", "AIB").capitalize()
+                    item.text = str(value).replace("Ai", "AI").replace("ai", "AI").capitalize()
 
 
 def excel_to_xml(filePath, isChinese=1):
