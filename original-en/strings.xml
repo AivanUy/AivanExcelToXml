@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY money "AIB"> <!ENTITY appname  "AIPay">]>
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="app_name_test">&appname; Test</string>
+    <string name="http_unauthorized">unauthorized</string>
+    <string name="http_forbidden">403 No permission</string>
+    <string name="http_paramter">Parameter error</string>
+    <string name="http_not_found">No resource found</string>
+    <string name="http_request_timeout">Request timed out</string>
+    <string name="http_internal_server_error">Server internal error</string>
+    <string name="http_bad_gateway">Server under maintenance</string>
+    <string name="http_service_unavailable">Service Unavailable</string>
+    <string name="http_gateway_timeout">Gateway timeout</string>
+    <string name="http_method_not_allowed">Wrong request method</string>
+    <string name="unknown_mistake">unknown error</string>
+    <string name="connect_exception">Server connection failed</string>
+    <string name="network_connect_exception">Poor Connection</string>
+    <string name="server_connection_timeout">Server connection timeout</string>
+    <string name="ssl_handshake_exception">Certificate verification failed</string>
+    <string name="protocol_exception">Network Error</string>
+    <string name="parsing_failed"> Analysis failed</string>
+
+    <string name="transactions_safer">Make transactions easier and safer</string>
+    <string name="common_deny_permission">You deny the corresponding permission</string>
+
+</resources>

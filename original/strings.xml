@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY money "AIB"> <!ENTITY appname  "AIPay">]>
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="app_name_test">&appname; Test</string>
+    <string name="http_unauthorized">未授权</string>
+    <string name="http_forbidden">403没权限</string>
+    <string name="http_paramter">参数错误</string>
+    <string name="http_not_found">没找到资源</string>
+    <string name="http_request_timeout">请求超时</string>
+    <string name="http_internal_server_error">服务器内部错误</string>
+    <string name="http_bad_gateway">服务器维护中</string>
+    <string name="http_service_unavailable">暂停服务</string>
+    <string name="http_gateway_timeout">网关超时</string>
+    <string name="http_method_not_allowed">请求方式错误</string>
+    <string name="unknown_mistake">未知错误</string>
+    <string name="connect_exception">服务器连接失败</string>
+    <string name="network_connect_exception">网络连接异常</string>
+    <string name="server_connection_timeout">服务器连接超时</string>
+    <string name="ssl_handshake_exception">证书验证失败</string>
+    <string name="protocol_exception">网络错误</string>
+    <string name="parsing_failed">解析失败</string>
+    <string name="common_deny_permission">你拒绝对应权限</string>
+</resources>
